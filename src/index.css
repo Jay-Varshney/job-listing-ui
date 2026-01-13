@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body{
+  height: 100%;
+  width: 100%;
+}
+
+/* ===== Parent Container ===== */
+.parent {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0f0f0f;
+  padding: 24px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ===== Card ===== */
+.card{
+  height: 360px;
+  width: 260px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* ===== Logo ===== */
+.logo{
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  object-fit: contain;
+}
+
+/* ===== Top Section ===== */
+.card .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top button{
+  height: 36px;
+  padding: 0 12px;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* ===== Center Section ===== */
+.card .center{
+  margin-top: 12px;
+  flex: 1;
+}
+
+.center h3{
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.center span{
+  font-size: 13px;
+  color: #777;
+}
+
+.center h2{
+  font-size: 16px;
+  margin: 12px 0 6px;
+}
+
+/* ===== Tags ===== */
+.center .tags{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.center h4{
+  background-color: #f1f1f1;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #333;
+}
+
+/* ===== Bottom Section ===== */
+.card .bottom{
+  border-top: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+}
+
+.bottom button{
+  background-color: #000;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  font-size: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.bottom button:hover{
+  background-color: #222;
+}
